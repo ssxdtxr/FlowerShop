@@ -1,0 +1,38 @@
+@media screen and (max-width: 992px) {
+  .header_btn {
+    display: block; }
+
+  nav {
+    position: absolute;
+    left: -350px;
+    top: 0;
+    width: 350px;
+    background-color: #fff;
+    padding: 84px 20px 20px 20px;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    z-index: 2; }
+    nav .nav_mnu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      nav .nav_mnu li {
+        width: 100%;
+        text-align: center;
+        color: #111;
+        font-size: 22px;
+        display: block;
+        padding: 10px 0; }
+
+  #header.open nav {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
+
+  .select_flow .inputs {
+    gap: 15px; } }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon.png"
+      type="image/png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/adaptive.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="inner_header">
+          <button class="header_btn" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="index.html" class="logo">
+            <img src="images/Logo.svg" alt="FoodShop" />
+          </a>
+          <nav>
+            <ul class="nav_mnu">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="createProduct.html">Создать товар</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="select_flow">
+          <div class="inputs">
+            <div class="search">
+              <div class="search_inf">
+                <input
+                  type="text"
+                  placeholder="Поиск"
+                  class="input_item"
+                  id="serch"
+                  required
+                />
+              </div>
+              <div class="search_drop_down"></div>
+            </div>
+            <div class="price_from">
+              <div class="price_search">
+                <input
+                  type="number"
+                  value=""
+                  class="input_item"
+                  id="price_from"
+                  required
+                />
+                <p>От</p>
+              </div>
+            </div>
+            <div class="price_up">
+              <div class="price_search">
+                <input
+                  type="number"
+                  value=""
+                  class="input_item"
+                  id="price_up"
+                  required
+                />
+                <p>До</p>
+              </div>
+            </div>
+          </div>
+
+          <select name="" id="select_sort">
+            <option value="0">По умолчанию</option>
+            <option value="1">По возврастанию</option>
+            <option value="2">По убыванию</option>
+          </select>
+        </div>
+        <div class="btns">
+          <button class="btn_search">Найти</button>
+          <button class="btn_show">Показать все товары</button>
+        </div>
+        <div id="products" class="products"></div>
+      </div>
+    </main>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/products.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon.png"
+      type="image/png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/adaptive.css" />
+    <title>Create Product</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="inner_header">
+          <button class="header_btn" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="index.html" class="logo">
+            <img src="images/Logo.svg" alt="FoodShop" />
+          </a>
+          <nav>
+            <ul class="nav_mnu">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="createProduct.html">Создать товар</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <form action="" id="form">
+          <div>
+            <input class="form_item" placeholder="Введите имя" type="text" />
+          </div>
+          <div>
+            <input
+              class="form_item"
+              placeholder="Введите скидку"
+              type="number"
+            />
+          </div>
+          <div>
+            <input class="form_item" placeholder="Введите цену" type="number" />
+          </div>
+          <div class="bestseller_item">
+            <p class="bestseller_text">Бестселлер:</p>
+            <input class="form_item" type="checkbox" />
+          </div>
+          <div>
+            <input class="form_item" type="file" />
+          </div>
+          <div>
+            <select class="form_item" name="" id="">
+              <option value="0">Не выбрано</option>
+              <option value="1">маме</option>
+              <option value="2">девушке</option>
+              <option value="3">бабушке</option>
+            </select>
+          </div>
+          <button type="submit" class="createProduct_btn">Создать</button>
+        </form>
+      </div>
+    </main>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/products.js"></script>
+    <script src="scripts/createProduct.js"></script>
+  </body>
+</html>
+<!--id: 6,
+    img: "./images/products_img/img_6.jpg",
+    name: "Одуванчик",
+    views: 200,
+    bestseller: false,
+    price: 1800,
+    sale: 0,
+    categoryId: 3,-->
